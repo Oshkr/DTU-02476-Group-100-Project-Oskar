@@ -1,5 +1,4 @@
 docs/site/
-data/raw/
 
 # test cache
 manual_test/
@@ -178,7 +177,7 @@ cython_debug/
 .idea/
 
 # DVC
-/data
+/data/raw/
 
 # Hydra
 outputs/
