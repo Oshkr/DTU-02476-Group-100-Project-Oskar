@@ -2,7 +2,7 @@ steps:
 
   - name: 'gcr.io/cloud-builders/gsutil'
     args:
-      - 'ls'
+      - 'ls gs://vinegrape_data/'
 
   - name: 'gcr.io/cloud-builders/gsutil'
     args:
