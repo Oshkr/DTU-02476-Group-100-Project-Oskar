@@ -177,7 +177,7 @@ cython_debug/
 .idea/
 
 # DVC
-/data/raw/
+data/
 
 # Hydra
 outputs/
