@@ -1,10 +1,15 @@
 steps:
+
+  - name: 'gcr.io/cloud-builders/gsutil'
+    args:
+      - 'ls'
+
   - name: 'gcr.io/cloud-builders/gsutil'
     args:
       - '-m' # multithreading
       - 'cp'
       - '-r'
-      - 'gs://vinegrape_data/data/*'  # Specify the path to your data file in Cloud Storage
+      - 'gs://vinegrape_data/data/'  # Specify the path to your data file in Cloud Storage
       - 'data/'  # destination
 
   - name: 'gcr.io/cloud-builders/docker'
