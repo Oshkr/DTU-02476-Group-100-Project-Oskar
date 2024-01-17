@@ -13,6 +13,6 @@ steps:
       - 'data/'  # destination
 
   - name: 'gcr.io/cloud-builders/docker'
-    args: ['build', '-t', 'gcr.io/$PROJECT_ID/trainer:latest','-f','trainer.dockerfile','.']
+    args: ['build', '-t', 'gcr.io/cohesive-mender-411409/trainer:latest','-f','trainer.dockerfile','.']
   - name: 'gcr.io/cloud-builders/docker'
-    args: ['push', 'gcr.io/$PROJECT_ID/trainer:latest','-f','trainer.dockerfile']
+    args: ['push', 'gcr.io/cohesive-mender-411409/trainer:latest','-f','trainer.dockerfile']
