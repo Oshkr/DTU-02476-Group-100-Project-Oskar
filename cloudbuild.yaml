@@ -1,9 +1,4 @@
 steps:
-
-  - name: 'gcr.io/cloud-builders/gsutil'
-    args:
-      - 'ls gs://vinegrape_data/'
-
   - name: 'gcr.io/cloud-builders/gsutil'
     args:
       - '-m' # multithreading
@@ -11,7 +6,6 @@ steps:
       - '-r'
       - 'gs://vinegrape_data/data/'  # Specify the path to your data file in Cloud Storage
       - 'data/'  # destination
-
   - name: 'gcr.io/cloud-builders/docker'
     args: ['build', '-t', 'gcr.io/cohesive-mender-411409/trainer:latest','-f','trainer.dockerfile','.']
   - name: 'gcr.io/cloud-builders/docker'
