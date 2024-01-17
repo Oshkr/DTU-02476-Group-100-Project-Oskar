@@ -11,4 +11,4 @@ steps:
     env: ['DOCKER_BUILDKIT=1']
 
   - name: 'gcr.io/cloud-builders/docker'
-    args: ['push', 'gcr.io/cohesive-mender-411409/trainer:latest','-f','trainer.dockerfile']
+    args: ['push', 'gcr.io/cohesive-mender-411409/trainer:latest']
