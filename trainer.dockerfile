@@ -1,3 +1,5 @@
+# syntax=docker/dockerfile:1.4
+
 # Base image
 FROM python:3.10-slim
 
