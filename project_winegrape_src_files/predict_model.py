@@ -40,9 +40,10 @@ def inference(cfg : DictConfig):
     model.eval()
 
     test_loader = data_module.test_dataloader()
-
+    
     print(f"model inference for model {cfg.model.model_name}_best_model.ckpt")
 
+    # no gradients
     with torch.no_grad():
         n_images = 0
         for images, labels in test_loader:
